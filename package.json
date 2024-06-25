@@ -7,11 +7,19 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "nodemon ./api/request.cjs"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.4.3",
+    "nodemon": "^3.1.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
+    "salt": "^0.5.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

@@ -1,0 +1,46 @@
+#tasks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.task {
+    background-color: yellow;
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+
+}
+
+.taskHeader {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.taskBtns {
+ display: flex;
+ gap: 5px;
+}
+
+.completeTask {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: green;
+    cursor: pointer;
+}
+.completeTask:active {
+    background-color: rgb(38, 238, 38);
+
+}
+.deleteTask {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid red;
+    background-color: red;
+    cursor: pointer;
+
+}
