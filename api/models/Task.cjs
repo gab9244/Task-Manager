@@ -4,9 +4,10 @@ const {Schema, model} = mongoose
 
 //Temos que criar um modelo para que possamos enviar os dados do post para o banco de dados, nesse caso enviaremos o titulo E conteudo
 
-const  PostSchema = new Schema ({
+const  TaskSchema = new Schema ({
     title:String,
-    content:String
+    content:String,
+    username: String,
 },{
      //timestamps é um atalho para dois outros campos, createdAt e updatedAt
     //createAt Este campo registra a data e hora de quando o documento foi salvo pela primeira vez no banco de dados. É definido uma vez durante a criação e permanece inalterado depois
@@ -17,6 +18,7 @@ const  PostSchema = new Schema ({
 )
 
 
-const PostModel = model('Post', PostSchema)
+//Usamos essa linha para criar um modelo no mongodb 
+const TaskModel = model('Task', TaskSchema)
 
-module.exports = PostModel
+module.exports = TaskModel
