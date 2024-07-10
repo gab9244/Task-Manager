@@ -50,7 +50,7 @@ app.use(express.json())
 //Usamos os cookieParser() nas solicitações para os cookies sejam passados para as solicitações e com isso podemos usa-lo para mander o nosso projeto seguro 
 app.use(cookieParser())
 
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = ['https://task-manager-q6ci.onrender.com'];
 
 app.use(cors({
   origin: function (origin, callback) {
